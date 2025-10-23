@@ -131,13 +131,13 @@ https://www.amazon.com/dp/B09G3HRMVB,150,0
 
 ## **License**
 
-MIT License – see LICENSE file
+GPL-3.0 license – see LICENSE file
 
 ---
 
 
 ## Way forward:
 
-Host a selenium script on AWS that runs a selenium script in a headful browser using a thing like Openbox or X11.
-
-The final product is a flask app with an endpoint, and we can spin up a browser and return the information that we need to return. Deploy with Python code, just looking for help deploying it on a server, and using a proxy manager to route the network traffic through our proxy servers.
+- Host a headful Selenium browser on an AWS server (or equivalent VM) using a lightweight X server/window manager such as X11/Openbox. 
+- Expose a small Flask application with an endpoint that, when called, launches or attaches to the headful browser, runs the Selenium routine, collects the required data, and returns it in the response.
+- Deploy the whole stack as Python services on the server and use a proxy manager to route outgoing/incoming traffic through your proxy pool.
