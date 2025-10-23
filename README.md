@@ -134,3 +134,10 @@ https://www.amazon.com/dp/B09G3HRMVB,150,0
 MIT License – see LICENSE file
 
 ---
+
+
+## Way forward:
+
+Host a selenium script on AWS that runs a selenium script in a headful browser using a thing like Openbox or X11.
+
+The final product is a flask app with an endpoint, and we can spin up a browser and return the information that we need to return. Deploy with Python code, just looking for help deploying it on a server, and using a proxy manager to route the network traffic through our proxy servers.
